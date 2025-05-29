@@ -1,0 +1,140 @@
+@charset "UTF-8";
+
+.zen-kaku-gothic-new-light {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.zen-kaku-gothic-new-regular {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.zen-kaku-gothic-new-medium {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-weight: 300;
+    box-sizing: border-box;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+body {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    height: 100%;
+}
+
+#wrap {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background: #ffffff;
+    position: relative;
+}
+
+.icon {
+    height: 100%;
+}
+
+.icon img {
+    width: 120px;
+    height: auto;
+    margin-top: 10%;
+    padding: 30px;
+    display: block;
+    border-radius: 100%;
+}
+
+header h1 {
+    font-size: 110%;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    padding-left: 40px;
+}
+
+nav ul {
+    text-align: right;
+    padding: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 50%;
+    font-weight: 500;
+    color: #616161;
+}
+
+main {
+    background: #fff;
+    padding: 1rem;
+    margin: auto;
+    margin-top: 5%;
+    display: grid;
+}
+
+section {
+    padding: 20px;
+    width: 100%;
+}
+
+.sec01 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+footer {
+    background: #3f6ec4;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    width: 100%;
+}
+
+/*タブレット用*/
+@media all and (min-width: 600px) {
+    .main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    nav ul li a {
+        font-size: 80%;
+    }
+
+
+    .sec01 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .sec02 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+}
