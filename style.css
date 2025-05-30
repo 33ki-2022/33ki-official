@@ -98,6 +98,29 @@ main {
     display: grid;
 }
 
+main h2 {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+main h3 {
+    font-size: 0.7rem;
+    font-weight: 400;
+}
+
+main h4 {
+    font-size: 0.6rem;
+    font-weight: 400;
+    line-height: 1rem;
+}
+
+main p {
+    font-size: 0.6rem;
+    font-weight: 500;
+    line-height: 1rem;
+    margin: 0.6rem 0 0;
+}
+
 section {
     padding: 20px;
     width: 100%;
@@ -111,6 +134,7 @@ section {
 footer {
     background: #3f6ec4;
     color: #fff;
+    font-size: 0.8rem;
     text-align: center;
     padding: 1rem;
     width: 100%;
@@ -118,14 +142,44 @@ footer {
 
 /*タブレット用*/
 @media all and (min-width: 600px) {
-    .main {
-        grid-template-columns: 1fr 1fr;
+    header h1 {
+        font-size: 150%;
+    }
+
+    main h2 {
+        font-size: 110%;
+    }
+
+    main h3 {
+        font-size: 110%;
+    }
+
+    main h4 {
+        font-size: 80%;
+        line-height: 2rem;
+    }
+
+    main p {
+        font-size: 80%;
+        line-height: 1.3rem;
+    }
+
+    .sec11 {
+        line-height: 2rem;
+    }
+
+    .icon img {
+        width: 150px;
+        height: auto;
     }
 
     nav ul li a {
         font-size: 80%;
     }
 
+    .main {
+        grid-template-columns: 1fr 1fr;
+    }
 
     .sec01 {
         grid-column-start: 1;
@@ -135,6 +189,52 @@ footer {
     .sec02 {
         grid-column-start: 2;
         grid-column-end: 3;
+    }
+
+    .images {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        gap: 0.5rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-column-start: 2;
+        grid-column-end: 5;
+        gap: 0.5rem;
+    }
+
+}
+
+/* pc用 */
+@media all and (min-width: 1025px) {
+    header h1 {
+        font-size: 200%;
+    }
+
+    .icon img {
+        width: 180px;
+        height: auto;
+    }
+
+    .main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .sec01 {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .sec02 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    .sec03 {
+        grid-column-start: 3;
+        grid-column-end: 4;
     }
 
 }
